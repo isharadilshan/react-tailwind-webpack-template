@@ -8,9 +8,9 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "prettier",
-    "prettier/react",
-    "plugin:jest/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended",
   ],
   parserOptions: {
     ecmaVersion: "2017",
@@ -25,10 +25,10 @@ module.exports = {
     "import/no-duplicates": "error",
     "import/no-unresolved": "error",
     "import/named": "error",
-    // "prettier/prettier": "error",
+    "prettier/prettier": "error",
     "react/no-typos": "error",
     "react/no-unused-state": "error",
-    "react/jsx-no-bind": "error",
+    // "react/jsx-no-bind": "error",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
     "react/jsx-uses-react": "off",
@@ -36,7 +36,7 @@ module.exports = {
     "array-callback-return": "error",
     "consistent-return": "error",
     "babel/no-invalid-this": "error",
-    "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "no-unused-vars": ["error", { varsIgnorePattern: "React", argsIgnorePattern: "^_" }],
   },
   settings: {
     react: {
