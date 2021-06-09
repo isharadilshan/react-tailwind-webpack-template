@@ -16,19 +16,18 @@ const AppHeader = () => {
             Brand Name
           </Link>
           <button
-            className='cursor-pointer text-xl leading-none px-5 py-1 border border-solid border-gray-400 rounded bg-transparent block lg:hidden outline-none focus:outline-none'
+            className='cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-gray-400 rounded bg-transparent block lg:hidden outline-none focus:outline-none'
             type='button'
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
-            <FaBars size={25} color={'gray'} />
+            <FaBars size={22} color={'gray'} />
           </button>
         </div>
         <div
           className={
-            'lg:flex flex-grow items-center bg-gray-800 lg:bg-opacity-0 lg:shadow-none' +
+            'lg:flex flex-grow items-center bg-transparent lg:bg-opacity-0 lg:shadow-none' +
             (navbarOpen ? ' block' : ' hidden')
           }
-          id='example-navbar-warning'
         >
           <ul className='flex flex-col lg:flex-row list-none mr-auto'>
             <li className='flex items-center hover:bg-gray-400 cursor-pointer rounded-md'>

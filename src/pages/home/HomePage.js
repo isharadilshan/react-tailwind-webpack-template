@@ -7,13 +7,13 @@ const HomePage = () => {
   const {addToast} = useToasts();
 
   const showNotification = () => {
-    addToast('MESSAGE', {appearance: 'info'});
+    addToast('MESSAGE', {appearance: 'success'}); //error,info,warn
   };
   return (
     <div className='min-h-screen'>
       <AnimatedBackground />
       <div
-        className='text-4xl text-red-700'
+        className='text-4xl text-gray-500'
         style={{marginTop: '25%', marginLeft: '45%'}}
         onClick={showNotification}
       >
