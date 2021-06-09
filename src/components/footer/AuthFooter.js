@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const AuthFooter = () => {
   return (
@@ -20,20 +21,18 @@ const AuthFooter = () => {
           <div className='w-full md:w-8/12 px-4'>
             <ul className='flex flex-wrap list-none md:justify-end  justify-center'>
               <li>
-                <a
-                  href='#'
-                  className='text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3'
-                >
-                  Link 1
-                </a>
+                <Link to='/signin'>
+                  <button type='button' className='btn btn-dark btn-custom'>
+                    {'Sign In'}
+                  </button>
+                </Link>
               </li>
               <li>
-                <a
-                  href='#'
-                  className='text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3'
-                >
-                  Link 2
-                </a>
+                <Link to='/signup'>
+                  <button type='button' className='btn btn-dark btn-custom'>
+                    {'Sign Up'}
+                  </button>
+                </Link>
               </li>
               <li>
                 <a

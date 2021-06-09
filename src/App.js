@@ -3,7 +3,8 @@ import {BrowserRouter} from 'react-router-dom';
 import Auth0ProviderWithHistory from './route/Auth0ProviderWithHistory';
 import {Provider as AppProvider} from './context/AppContext';
 import AppRoutes from './route/AppRoutes';
-import './app.styles.scss';
+import './app.scss';
+import './custom.css';
 
 const App = () => {
   return (

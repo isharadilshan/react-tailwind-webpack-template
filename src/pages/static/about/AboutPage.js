@@ -4,7 +4,10 @@ import AnimatedBackground from '../../../components/background/AnimatedBackgroun
 const AboutPage = () => {
   return (
     <>
-      <div style={{color: 'white', zIndex: '100'}}>
+      <div
+        className='test-class'
+        style={{color: 'white', zIndex: '100', height: '300px', width: '300px'}}
+      >
         {'This is Profile View Page'}
       </div>
       <AnimatedBackground />
