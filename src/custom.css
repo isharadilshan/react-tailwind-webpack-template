@@ -1,3 +1,29 @@
-.test-class {
-  background-color: red !important;
+.success-notification-toast-background {
+  background: #e6ffe6 !important;
+  border-radius: 5px !important;
+}
+.popup-notification-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.notification-icon-wrapper {
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.popup-notification-text-wrapper {
+  align-self: center;
+  margin-left: 30px;
+}
+.popup-notification-header-text {
+  font-family: Poppins;
+  color: #61608B;
+  font-size: 16px;
+  font-weight: bold;
+}
+.popup-notification-detail-text {
+  font-family: Poppins;
+  color: #61608B;
+  font-size: 12px;
 }

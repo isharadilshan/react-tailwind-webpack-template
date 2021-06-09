@@ -31,13 +31,13 @@ const AnimatedBackground = () => {
                 opacity: 0.8,
                 size: 5,
                 speed: 3,
-                color: ['#ff0000', '#ff7700'],
+                color: ['#ff0000', '#bb99ff'],
               },
             },
           },
           particles: {
             color: {
-              value: ['#ffffff', '#1254ef', '#ff0000'],
+              value: ['#99ff99', '#1254ef', '#ff0000'],
             },
             links: {
               color: 'random',
@@ -73,7 +73,7 @@ const AnimatedBackground = () => {
               value: 1,
             },
             shape: {
-              type: 'triangle',
+              type: 'square',
             },
             size: {
               animation: {
@@ -86,7 +86,7 @@ const AnimatedBackground = () => {
                 enable: true,
                 minimumValue: 2,
               },
-              value: 4,
+              value: 3,
             },
           },
           retina_detect: true,
