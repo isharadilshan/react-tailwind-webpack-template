@@ -3,7 +3,7 @@ import {FaTwitter, FaFacebook, FaDribbble, FaGithub} from 'react-icons/fa';
 
 const AppFooter = () => {
   return (
-    <footer className='relative bg-blueGray-200 pt-8 pb-6'>
+    <footer className='relative bg-blueGray-300 pt-8 pb-6'>
       <div className='bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20'></div>
       <div className='container mx-auto px-4'>
         <div className='flex flex-wrap text-center lg:text-left'>
@@ -32,7 +32,7 @@ const AppFooter = () => {
                 <FaDribbble size={20} />
               </button>
               <button
-                className='bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center px-2 rounded-full outline-none focus:outline-none mr-2'
+                className='bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center  rounded-full outline-none focus:outline-none mr-2'
                 type='button'
               >
                 <FaGithub size={20} />
