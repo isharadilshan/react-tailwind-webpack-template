@@ -5,7 +5,7 @@ import AnimatedBackground from '../../components/background/AnimatedBackground';
 const SignUpPage = () => {
   return (
     <main>
-      <section className='relative w-full h-full py-20'>
+      <section className='relative w-full h-full py-10'>
         <AnimatedBackground />
         <div className='container mx-auto px-4 h-full'>
           <div className='flex content-center items-center justify-center h-full'>

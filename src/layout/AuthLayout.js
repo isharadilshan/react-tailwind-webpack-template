@@ -11,7 +11,6 @@ const AuthLayout = ({children}) => {
       <AuthFooter />
     </div>
   );
-  // return children;
 };
 
 AuthLayout.propTypes = {

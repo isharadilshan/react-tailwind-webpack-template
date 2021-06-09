@@ -22,22 +22,22 @@ const AuthFooter = () => {
             <ul className='flex flex-wrap list-none md:justify-end  justify-center'>
               <li>
                 <Link to='/signin'>
-                  <button type='button' className='btn btn-dark btn-custom'>
+                  <div className='text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3'>
                     {'Sign In'}
-                  </button>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link to='/signup'>
-                  <button type='button' className='btn btn-dark btn-custom'>
+                  <div className='text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3'>
                     {'Sign Up'}
-                  </button>
+                  </div>
                 </Link>
               </li>
               <li>
                 <a
                   href='#'
-                  className='text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3'
+                  className='text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3'
                 >
                   Link 3
                 </a>
@@ -45,7 +45,7 @@ const AuthFooter = () => {
               <li>
                 <a
                   href='#'
-                  className='text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3'
+                  className='text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3'
                 >
                   Link 3
                 </a>
