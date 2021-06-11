@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, Redirect} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {withAuthenticationRequired} from '@auth0/auth0-react';
 import {Helmet} from 'react-helmet';
@@ -111,6 +111,7 @@ const AppRoutes = () => {
           component={ProfileViewPage}
           layout={AppLayout}
         />
+        <Redirect from='*' to='/' />
       </Switch>
     </>
   );
