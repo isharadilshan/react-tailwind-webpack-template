@@ -1,7 +1,7 @@
 import React from 'react';
 import {useToasts} from 'react-toast-notifications';
 import AnimatedBackground from '../../components/background/AnimatedBackground';
-// import LoadingComponent from '../../components/common/LoadingComponent';
+// import MainLoading from '../../components/common/loading/MainLoading';
 
 const HomePage = () => {
   const {addToast} = useToasts();
@@ -19,7 +19,7 @@ const HomePage = () => {
       >
         Notify
       </div>
-      {/* <LoadingComponent /> */}
+      {/* <MainLoading /> */}
     </div>
   );
 };

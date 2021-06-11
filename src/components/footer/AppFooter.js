@@ -32,7 +32,7 @@ const AppFooter = () => {
                 <FaDribbble size={20} />
               </button>
               <button
-                className='bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center  rounded-full outline-none focus:outline-none mr-2'
+                className='bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center  px-2 rounded-full outline-none focus:outline-none mr-2'
                 type='button'
               >
                 <FaGithub size={20} />
@@ -120,7 +120,7 @@ const AppFooter = () => {
                   </li>
                 </ul>
               </div>
-              <div className='w-full lg:w-4/12 px-4'>
+              <div className='w-full lg:w-4/12 px-4 ml-auto'>
                 <span className='block uppercase text-blueGray-500 text-sm font-semibold mb-2'>
                   Other Resources
                 </span>
