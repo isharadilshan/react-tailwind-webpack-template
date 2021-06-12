@@ -28,7 +28,7 @@ module.exports = {
     "prettier/prettier": "error",
     "react/no-typos": "error",
     "react/no-unused-state": "error",
-    // "react/jsx-no-bind": "error",
+    // "react/jsx-no-bind": "warn",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
     "react/jsx-uses-react": "off",
@@ -36,7 +36,7 @@ module.exports = {
     "array-callback-return": "error",
     "consistent-return": "error",
     "babel/no-invalid-this": "error",
-    "no-unused-vars": ["error", { varsIgnorePattern: "React", argsIgnorePattern: "^_" }],
+    "no-unused-vars": ["warn", { varsIgnorePattern: "React", argsIgnorePattern: "^_" }],
   },
   settings: {
     react: {

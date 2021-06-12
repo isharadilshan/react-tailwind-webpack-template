@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense, lazy} from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {withAuthenticationRequired} from '@auth0/auth0-react';
@@ -6,11 +6,12 @@ import {Helmet} from 'react-helmet';
 import AppLayout from '../layouts/AppLayout';
 import AuthLayout from '../layouts/AuthLayout';
 import ScrollOnNavigate from '../components/util/ScrollOnNavigate';
-import SignInPage from '../pages/auth/SignInPage';
-import SignUpPage from '../pages/auth/SignUpPage';
+import MainLoading from '../components/common/loading/MainLoading';
 import HomePage from '../pages/home/HomePage';
-import ProfileViewPage from '../pages/profile/ProfileViewPage';
-import AboutPage from '../pages/static/about/AboutPage';
+const SignInPage = lazy(() => import('../pages/auth/SignInPage'));
+const SignUpPage = lazy(() => import('../pages/auth/SignUpPage'));
+const ProfileViewPage = lazy(() => import('../pages/profile/ProfileViewPage'));
+const AboutPage = lazy(() => import('../pages/static/about/AboutPage'));
 
 const AppRoutes = () => {
   const defaultMetaTags = {
@@ -93,26 +94,37 @@ const AppRoutes = () => {
   return (
     <>
       <ScrollOnNavigate />
-      <Switch>
-        <RouteWrapper exact path='/' component={HomePage} layout={AppLayout} />
-        <RouteWrapper
-          path='/signin'
-          component={SignInPage}
-          layout={AuthLayout}
-        />
-        <RouteWrapper
-          path='/signup'
-          component={SignUpPage}
-          layout={AuthLayout}
-        />
-        <RouteWrapper path='/about' component={AboutPage} layout={AppLayout} />
-        <ProtectedRouteWrapper
-          path='/profile'
-          component={ProfileViewPage}
-          layout={AppLayout}
-        />
-        <Redirect from='*' to='/' />
-      </Switch>
+      <Suspense fallback={<MainLoading transparent={true} />}>
+        <Switch>
+          <RouteWrapper
+            exact
+            path='/'
+            component={HomePage}
+            layout={AppLayout}
+          />
+          <RouteWrapper
+            path='/signin'
+            component={SignInPage}
+            layout={AuthLayout}
+          />
+          <RouteWrapper
+            path='/signup'
+            component={SignUpPage}
+            layout={AuthLayout}
+          />
+          <RouteWrapper
+            path='/about'
+            component={AboutPage}
+            layout={AppLayout}
+          />
+          <ProtectedRouteWrapper
+            path='/profile'
+            component={ProfileViewPage}
+            layout={AppLayout}
+          />
+          <Redirect from='*' to='/' />
+        </Switch>
+      </Suspense>
     </>
   );
 };
