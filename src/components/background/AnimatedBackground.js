@@ -11,7 +11,7 @@ const AnimatedBackground = () => {
         options={{
           fps_limit: 60,
           background: {
-            color: 'rgba(30, 41, 59, 1)',
+            color: '#0F172A',
           },
           interactivity: {
             detect_on: 'canvas',

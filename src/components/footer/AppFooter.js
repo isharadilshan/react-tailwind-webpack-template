@@ -49,7 +49,7 @@ const AppFooter = () => {
                 <ul className='list-unstyled'>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Media 1
@@ -57,7 +57,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Media 2
@@ -65,7 +65,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Media 3
@@ -73,7 +73,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Media 4
@@ -88,7 +88,7 @@ const AppFooter = () => {
                 <ul className='list-unstyled'>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       About Us
@@ -96,7 +96,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Blog
@@ -104,7 +104,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Github
@@ -112,7 +112,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Free Products
@@ -127,7 +127,7 @@ const AppFooter = () => {
                 <ul className='list-unstyled'>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Gallery
@@ -135,7 +135,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Terms & Conditions
@@ -143,7 +143,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Privacy Policy
@@ -151,7 +151,7 @@ const AppFooter = () => {
                   </li>
                   <li>
                     <a
-                      className='text-blueGray-600 hover:text-gray-400 font-semibold block pb-2 text-sm'
+                      className='text-blueGray-600 hover:text-blueGray-400 font-semibold block pb-2 text-sm'
                       href='#'
                     >
                       Contact Us
@@ -167,7 +167,7 @@ const AppFooter = () => {
           <div className='w-full md:w-4/12 px-4 mx-auto text-center'>
             <div className='text-sm text-blueGray-500 font-semibold py-1'>
               Copyright © {new Date().getFullYear()}{' '}
-              <a href='#' className='text-blueGray-500 hover:text-gray-400'>
+              <a href='#' className='text-blueGray-500 hover:text-blueGray-400'>
                 Copyright
               </a>
               .

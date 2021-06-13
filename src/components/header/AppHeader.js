@@ -30,25 +30,25 @@ const AppHeader = () => {
           }
         >
           <ul className='flex flex-col lg:flex-row list-none mr-auto'>
-            <li className='flex items-center hover:bg-gray-400 cursor-pointer rounded-md'>
+            <li className='flex items-center hover:bg-blueGray-400 cursor-pointer rounded-md'>
               <Link
-                className='hover:text-gray-500 text-white px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                className='hover:text-blueGray-700 text-blueGray-300 px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
                 to='/'
               >
                 Link 1
               </Link>
             </li>
-            <li className='flex items-center hover:bg-gray-400 cursor-pointer rounded-md'>
+            <li className='flex items-center hover:bg-blueGray-400 cursor-pointer rounded-md'>
               <Link
-                className='hover:text-gray-500 text-white px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                className='hover:text-blueGray-700 text-blueGray-300 px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
                 to='/'
               >
                 Link 2
               </Link>
             </li>
-            <li className='flex items-center hover:bg-gray-400 cursor-pointer rounded-md'>
+            <li className='flex items-center hover:bg-blueGray-400 cursor-pointer rounded-md'>
               <Link
-                className='hover:text-gray-500 text-white px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                className='hover:text-blueGray-700 text-blueGray-300 px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
                 to='/'
               >
                 Link 3
@@ -56,12 +56,12 @@ const AppHeader = () => {
             </li>
           </ul>
           <ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
-            <li className='flex items-center hover:bg-gray-400 cursor-pointer rounded-full px-2'>
-              <FaGlobe size={20} color={'white'} />
+            <li className='flex items-center hover:bg-blueGray-400 cursor-pointer rounded-full px-2'>
+              <FaGlobe size={20} color={'#CBD5E1'} />
             </li>
             <li className='flex items-center hover:bg-green-600 cursor-pointer rounded-md lg:ml-3'>
               <Link
-                className='hover:text-gray-500 text-white px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                className='hover:text-blueGray-700 text-blueGray-300 px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
                 to='/signup'
               >
                 Register

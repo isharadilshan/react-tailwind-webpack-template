@@ -13,7 +13,7 @@ const HomePage = () => {
     <div className='min-h-screen'>
       <AnimatedBackground />
       <div
-        className='text-4xl text-gray-500'
+        className='text-4xl text-blueGray-500 cursor-pointer'
         style={{marginTop: '25%', marginLeft: '45%'}}
         onClick={showNotification}
       >

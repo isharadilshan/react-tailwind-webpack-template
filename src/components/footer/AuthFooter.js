@@ -12,7 +12,7 @@ const AuthFooter = () => {
               Copyright © {new Date().getFullYear()}{' '}
               <a
                 href='#'
-                className='text-white hover:text-blueGray-300 text-sm font-semibold py-1'
+                className='text-blueGray-400 hover:text-blueGray-600 text-sm font-semibold py-1'
               >
                 copyright
               </a>
@@ -22,14 +22,14 @@ const AuthFooter = () => {
             <ul className='flex flex-wrap list-none md:justify-end  justify-center'>
               <li>
                 <Link to='/signin'>
-                  <div className='text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3'>
+                  <div className='text-blueGray-400 hover:text-blueGray-600 text-sm font-semibold block py-1 px-3'>
                     {'Sign In'}
                   </div>
                 </Link>
               </li>
               <li>
                 <Link to='/signup'>
-                  <div className='text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3'>
+                  <div className='text-blueGray-400 hover:text-blueGray-600 text-sm font-semibold block py-1 px-3'>
                     {'Sign Up'}
                   </div>
                 </Link>
@@ -37,15 +37,7 @@ const AuthFooter = () => {
               <li>
                 <a
                   href='#'
-                  className='text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3'
-                >
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a
-                  href='#'
-                  className='text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3'
+                  className='text-blueGray-400 hover:text-blueGray-600 text-sm font-semibold block py-1 px-3'
                 >
                   Link 3
                 </a>
