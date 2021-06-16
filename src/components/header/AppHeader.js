@@ -1,9 +1,17 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import {FaBars, FaGlobe} from 'react-icons/fa';
 
 const AppHeader = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const onRegister = () => {
+    ReactGA.event({
+      category: 'Register',
+      action: 'User click register button',
+    });
+  };
 
   return (
     <nav className='top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg'>
@@ -63,6 +71,7 @@ const AppHeader = () => {
               <Link
                 className='hover:text-blueGray-700 text-blueGray-300 px-5 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
                 to='/signup'
+                onClick={onRegister}
               >
                 Register
               </Link>

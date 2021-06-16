@@ -1,21 +1,14 @@
 import React from 'react';
 import {BrowserRouter, useHistory} from 'react-router-dom';
 import {Auth0Provider} from '@auth0/auth0-react';
-import ReactGA from 'react-ga';
-import {createBrowserHistory} from 'history';
+import ReactGA from 'react-ga4';
 import {ToastProvider} from 'react-toast-notifications';
 import {Provider as AppProvider} from './context/AppContext';
 import AppRoutes from './routes/AppRoutes';
 import './app.scss';
 import './custom.css';
 
-ReactGA.initialize('UA-177375203-1');
-
-const history = createBrowserHistory();
-history.listen((location) => {
-  ReactGA.set({page: location.pathname});
-  ReactGA.pageview(location.pathname);
-});
+ReactGA.initialize('G-F8WM05BYDK');
 
 const App = () => {
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
