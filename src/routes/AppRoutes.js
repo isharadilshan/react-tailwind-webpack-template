@@ -11,11 +11,7 @@ const SignInPage = lazy(() => import('../pages/auth/SignInPage'));
 const SignUpPage = lazy(() => import('../pages/auth/SignUpPage'));
 const ProfileViewPage = lazy(() => import('../pages/profile/ProfileViewPage'));
 const AboutPage = lazy(() => import('../pages/static/about/AboutPage'));
-const HomePage = lazy(() => {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(import('../pages/home/HomePage')), 1000);
-  });
-});
+const HomePage = lazy(() => import('../pages/home/HomePage'));
 
 const AppRoutes = () => {
   const defaultMetaTags = {
