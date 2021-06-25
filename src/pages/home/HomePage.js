@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga4';
 import {useToasts} from 'react-toast-notifications';
 import {
   BrowserView,
@@ -13,7 +14,11 @@ const HomePage = () => {
   const {addToast} = useToasts();
 
   const showNotification = () => {
-    addToast('MESSAGE', {appearance: 'success'}); //error,info,warn
+    ReactGA.event({
+      category: 'Notify',
+      action: 'User click on notify',
+    });
+    // addToast('MESSAGE', {appearance: 'success'}); //error,info,warn
   };
   return (
     <div className='min-h-screen'>
