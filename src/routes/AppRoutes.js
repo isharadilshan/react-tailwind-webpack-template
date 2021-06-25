@@ -7,17 +7,21 @@ import AppLayout from '../layouts/AppLayout';
 import AuthLayout from '../layouts/AuthLayout';
 import ScrollOnNavigate from '../components/util/ScrollOnNavigate';
 import MainLoading from '../components/common/loading/MainLoading';
-import HomePage from '../pages/home/HomePage';
 const SignInPage = lazy(() => import('../pages/auth/SignInPage'));
 const SignUpPage = lazy(() => import('../pages/auth/SignUpPage'));
 const ProfileViewPage = lazy(() => import('../pages/profile/ProfileViewPage'));
 const AboutPage = lazy(() => import('../pages/static/about/AboutPage'));
+const HomePage = lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import('../pages/home/HomePage')), 1000);
+  });
+});
 
 const AppRoutes = () => {
   const defaultMetaTags = {
-    title: 'Title',
-    description: 'Description',
-    keywords: 'keyword1, keyword2',
+    title: 'REACT WEBPACK TEMPLATE | PUBLIC FRONT END',
+    description: 'REACT WEBPACK TEMPLATE | PUBLIC FRONT END',
+    keywords: '',
     robots: 'follow',
     canonicalUrl: 'http://www.google.com',
   };
@@ -94,7 +98,7 @@ const AppRoutes = () => {
   return (
     <>
       <ScrollOnNavigate />
-      <Suspense fallback={<MainLoading transparent={true} />}>
+      <Suspense fallback={<MainLoading />}>
         <Switch>
           <RouteWrapper
             exact

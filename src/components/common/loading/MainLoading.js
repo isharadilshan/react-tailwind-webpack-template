@@ -8,7 +8,7 @@ const MainLoading = ({
   backgroundColor = null,
 }) => {
   const tClass = transparent ? 'bg-opacity-10' : '';
-  const bClass = backgroundColor ? backgroundColor : 'bg-blue-50';
+  const bClass = backgroundColor ? backgroundColor : 'bg-blueGray-900';
 
   return (
     <div
