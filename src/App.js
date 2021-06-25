@@ -9,7 +9,8 @@ import AppRoutes from './routes/AppRoutes';
 import './app.scss';
 import './custom.css';
 
-ReactGA.initialize('G-F8WM05BYDK');
+const GCODE = process.env.GOOGLE_ANALYTIC_CODE;
+ReactGA.initialize(GCODE);
 
 const App = () => {
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
