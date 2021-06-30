@@ -1,7 +1,8 @@
-import React, {Suspense, lazy} from 'react';
-import {Switch, Route, Redirect} from 'react-router-dom';
+import React, {useEffect, Suspense, lazy} from 'react';
+import {Switch, Route, Redirect, useHistory} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {withAuthenticationRequired} from '@auth0/auth0-react';
+import ReactGA from 'react-ga4';
 import {Helmet} from 'react-helmet';
 import AppLayout from '../layouts/AppLayout';
 import AuthLayout from '../layouts/AuthLayout';
@@ -14,6 +15,14 @@ const AboutPage = lazy(() => import('../pages/static/about/AboutPage'));
 const HomePage = lazy(() => import('../pages/home/HomePage'));
 
 const AppRoutes = () => {
+  const history = useHistory();
+
+  useEffect(() => {
+    return history.listen((location) => {
+      ReactGA.pageview(location.pathname);
+    });
+  }, [history]);
+
   const defaultMetaTags = {
     title: 'REACT WEBPACK TEMPLATE | PUBLIC FRONT END',
     description: 'REACT WEBPACK TEMPLATE | PUBLIC FRONT END',

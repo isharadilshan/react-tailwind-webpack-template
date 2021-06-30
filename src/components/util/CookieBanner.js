@@ -8,6 +8,7 @@ const CookieBanner = () => {
     <CookieConsent
       location='bottom'
       buttonText='Accept'
+      declineButtonText='Decline'
       cookieName='applicationCookie'
       style={{
         padding: '5px',
@@ -39,11 +40,11 @@ const CookieBanner = () => {
       }}
       expires={10}
       enableDeclineButton
-      debug={true}
+      debug={true} //remove this on production
     >
       <p className='text-center md:text-left text-white text-sm leading-tight md:pr-12 px-1'>
         This website uses cookies and similar technologies as specified in our{' '}
-        <Link className='underline' to='/about'>
+        <Link className='underline' to='#'>
           Cookie Policy
         </Link>{' '}
         to enhance the user experience. You agree to consent to the use of these
